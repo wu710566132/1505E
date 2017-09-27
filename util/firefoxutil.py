@@ -22,6 +22,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+# 浮动倒包
+from selenium.webdriver.common.action_chains import ActionChains
+
 
 # 定义一个类继承 object
 class startFirfox2(object):
@@ -185,7 +188,7 @@ class startFirfox2(object):
 
         except Exception:
 
-            pass
+            return self.driver.find_element_by_xpath(ID)
 
     # 查找控件的方式
 
@@ -350,6 +353,21 @@ class startFirfox2(object):
         self.TimeSleep(ENUM.TWO_TIME)
 
         return self.driver.title
+
+
+    # 浮动的封装
+    def ActionMove(self,cls):
+
+        # 查找控件
+        clss = self.FindClass(cls)
+
+        # 浮动
+        ActionChains(self.driver).move_to_element(clss).perform()
+
+        # 休眠二秒
+        self.ImplaySleep(ENUM.TWO_TIME)
+
+        pass
 
 
 

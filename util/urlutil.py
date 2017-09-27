@@ -11,7 +11,7 @@ class URL(object):
 
 
     # 测试环境的基类
-    JD_MAIN = ""
+    # JD_MAIN = ""
 
 
 

@@ -3,12 +3,14 @@ import unittest
 import os
 import HTMLTestRunner
 
-from unit import logins
+from unit import logins,mians
 
 suit = unittest.TestSuite()
 
 # 加入到测试套件里面
-suit.addTest(unittest.makeSuite(logins.Login))
+# 低耦合的好处就在可拆卸
+# suit.addTest(unittest.makeSuite(logins.Login))
+suit.addTest(unittest.makeSuite(mians.Main))
 
 
 # 指定路径

@@ -55,7 +55,12 @@ class MainControl(object):
 
 
         # 获取列表的内容
-        address = self.frefox.FindXpath("//*[@id='ttbar-mycity']/div[2]/div[2]/div/div/div[2]/a")
+        address = self.frefox.FindXpaths("//div[@class = 'item']/a")
+        # 当去指定的内容
+        message = address[position].text
+
+        # 加入休眠
+        self.frefox.TimeSleep(5)
 
         # 通过class 查询
         gl_items = self.frefox.FindClasses(cls)
@@ -69,7 +74,7 @@ class MainControl(object):
         msg = ui_areamini_text.text
 
 
-        self1.assertEqual(msg, address.text)
+        self1.assertEqual(msg, message)
 
         pass
 

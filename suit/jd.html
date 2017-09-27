@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>京东</h1>
-<p class='attribute'><strong>Start Time:</strong> 2017-09-27 15:04:34</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:10.249626</p>
-<p class='attribute'><strong>Status:</strong> Error 1</p>
+<p class='attribute'><strong>Start Time:</strong> 2017-09-27 15:36:11</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:19.389045</p>
+<p class='attribute'><strong>Status:</strong> Pass 1</p>
 
 <p class='description'>描述</p>
 </div>
@@ -221,65 +221,26 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='errorClass'>
+<tr class='passClass'>
     <td>unit.mians.Main</td>
     <td>1</td>
-    <td>0</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
+    <td>0</td>
     <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
 </tr>
 
-<tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_mian_address_switch</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
-        error</a>
-
-    <div id='div_ft1.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft1.1: Traceback (most recent call last):
-  File "/Users/apple/Desktop/python/1505E-9-26/unit/mians.py", line 76, in test_mian_address_switch
-    self.mainControl.MainAssertText("item",1,self)
-  File "/Users/apple/Desktop/python/1505E-9-26/main/control/maincontrol.py", line 72, in MainAssertText
-    self1.assertEqual(msg, address.text)
-  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/webelement.py", line 68, in text
-    return self._execute(Command.GET_ELEMENT_TEXT)['value']
-  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/webelement.py", line 461, in _execute
-    return self._parent.execute(command, params)
-  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/webdriver.py", line 236, in execute
-    self.error_handler.check_response(response)
-  File "/Library/Python/2.7/site-packages/selenium/webdriver/remote/errorhandler.py", line 192, in check_response
-    raise exception_class(message, screen, stacktrace)
-StaleElementReferenceException: Message: Element not found in the cache - perhaps the page has changed since it was looked up
-Stacktrace:
-    at fxdriver.cache.getElementAt (resource://fxdriver/modules/web-element-cache.js:9454)
-    at Utils.getElementAt (file:///var/folders/n2/xvg4r8t92lqdj97ggwxc3qc00000gn/T/tmp1zNRip/extensions/fxdriver@googlecode.com/components/command-processor.js:9039)
-    at WebElement.getElementText (file:///var/folders/n2/xvg4r8t92lqdj97ggwxc3qc00000gn/T/tmp1zNRip/extensions/fxdriver@googlecode.com/components/command-processor.js:12092)
-    at DelayedCommand.prototype.executeInternal_/h (file:///var/folders/n2/xvg4r8t92lqdj97ggwxc3qc00000gn/T/tmp1zNRip/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
-    at fxdriver.Timer.prototype.setTimeout/&lt;.notify (file:///var/folders/n2/xvg4r8t92lqdj97ggwxc3qc00000gn/T/tmp1zNRip/extensions/fxdriver@googlecode.com/components/command-processor.js:625)
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_mian_address_switch</div></td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr id='total_row'>
     <td>Total</td>
     <td>1</td>
-    <td>0</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
+    <td>0</td>
     <td>&nbsp;</td>
 </tr>
 </table>

@@ -309,7 +309,7 @@ class startFirfox2(object):
 
         except Exception:
 
-            pass
+            return self.driver.find_elements_by_xpath(ID)
 
     # 查找控件的方式
 
